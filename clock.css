@@ -1,0 +1,23 @@
+:root {
+  --transition-speed: 500ms;
+}
+
+.clock {
+  font-family: 'Courier New', Courier, monospace;
+  width: 100vw;
+  height: 100vh;
+  transition: background-color var(--transition-speed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.clock__contant {
+  margin: 0;
+  padding: 0;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  font-size: max(80px, 10vh);
+  transition: all var(--transition-speed);
+}
